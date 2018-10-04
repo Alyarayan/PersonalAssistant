@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:backgroundTint="#99F8BBD0"
+    android:backgroundTintMode="src_atop"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        >
+
+        <ImageView
+            android:id="@+id/assistant"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/assistant" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@id/assistant"
+            android:fontFamily="@font/amatic"
+            android:text="Hello!"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/assistant"
+            android:text="I'm you assistant "
+            android:id="@+id/hello2"
+            android:textSize="30dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/amatic"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:padding="10dp"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:id="@+id/row1"
+               >
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:id="@+id/contacts"
+                   android:text="Contacts"
+                   android:fontFamily="@font/gaegu"
+                   android:drawableLeft="@drawable/contacts"
+                   android:padding="7dp"
+                   android:textSize="15dp"
+
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/contacts"
+                   android:text="Camera"
+                   android:drawableLeft="@drawable/camera"
+                   android:layout_marginLeft="10dp"
+                   android:padding="9dp"
+                   android:fontFamily="@font/gaegu"
+                   android:id="@+id/camera"
+                   android:textSize="15dp"
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/camera"
+                   android:text="Alarm"
+                   android:drawableLeft="@drawable/alarm"
+                   android:fontFamily="@font/gaegu"
+                   android:padding="7dp"
+                   android:layout_marginLeft="9dp"
+                   android:textSize="17dp"
+                   android:id="@+id/alarm"
+                   />
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:layout_below="@id/row1"
+               android:layout_marginTop="15dp"
+               android:id="@+id/row2"
+               >
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:id="@+id/browser"
+                   android:text="Browser"
+                   android:fontFamily="@font/gaegu"
+                   android:drawableLeft="@drawable/browser"
+                   android:padding="7dp"
+                   android:textSize="15dp"
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/browser"
+                   android:text="Settings"
+                   android:drawableLeft="@drawable/settings"
+                   android:layout_marginLeft="10dp"
+                   android:padding="9dp"
+                   android:fontFamily="@font/gaegu"
+                   android:id="@+id/settings"
+                   android:textSize="15dp"
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/settings"
+                   android:text="Gallery"
+                   android:drawableLeft="@drawable/gallery"
+                   android:fontFamily="@font/gaegu"
+                   android:padding="7dp"
+                   android:layout_marginLeft="9dp"
+                   android:textSize="15dp"
+                   android:id="@+id/gallery"
+                   />
+
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:layout_below="@id/row2"
+               android:layout_marginTop="15dp"
+               android:id="@+id/row3"
+               >
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:id="@+id/Calendar"
+                   android:text="Calendar"
+                   android:fontFamily="@font/gaegu"
+                   android:drawableLeft="@drawable/calendar"
+                   android:padding="8dp"
+                   android:textSize="15dp"
+
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/Calendar"
+                   android:text="Messages"
+                   android:drawableLeft="@drawable/messags"
+                   android:layout_marginLeft="10dp"
+                   android:padding="9dp"
+                   android:fontFamily="@font/gaegu"
+                   android:id="@+id/msgs"
+                   android:textSize="14dp"
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/msgs"
+                   android:text="Music"
+                   android:drawableLeft="@drawable/music"
+                   android:fontFamily="@font/gaegu"
+                   android:padding="10dp"
+                   android:layout_marginLeft="9dp"
+                   android:textSize="17dp"
+                   android:id="@+id/music"
+                   />
+
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:layout_below="@id/row3"
+               android:layout_marginTop="15dp"
+               android:id="@+id/row4"
+               >
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:id="@+id/dialler"
+                   android:text="Dialler"
+                   android:fontFamily="@font/gaegu"
+                   android:drawableLeft="@drawable/dialler"
+                   android:padding="10dp"
+                   android:textSize="15dp"
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/dialler"
+                   android:text="Timer"
+                   android:drawableLeft="@drawable/timer"
+                   android:layout_marginLeft="10dp"
+                   android:padding="9dp"
+                   android:fontFamily="@font/gaegu"
+                   android:id="@+id/timer"
+                   android:textSize="20dp"
+                   />
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:background="@drawable/buttonshape"
+                   android:layout_toRightOf="@id/timer"
+                   android:text="E-mail"
+                   android:drawableLeft="@drawable/email"
+                   android:fontFamily="@font/gaegu"
+                   android:padding="7dp"
+                   android:layout_marginLeft="9dp"
+                   android:textSize="17dp"
+                   android:id="@+id/email"
+                   />
+
+
+
+           </LinearLayout>
+
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
